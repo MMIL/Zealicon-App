@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/superheroesnavigation"
+
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_eventdetails"
+            android:layout_width="match_parent"
+            app:title="Event Details"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:elevation="2dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Theme.Translucent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <android.support.v7.widget.CardView
+
+                    app:paddingStart="10dp"
+                    android:padding="10dp"
+                    app:paddingEnd="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="2dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    app:cardBackgroundColor="#22FFFFFF"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/text_event_details_name"/>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:weightSum="100"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toggle"
+                    android:paddingTop="5dp"
+                    android:layout_weight="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:id="@+id/toggle_text"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switchcompat"
+
+                    android:layout_weight="90"
+                    android:layout_gravity="right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <android.support.v7.widget.CardView
+
+                    app:paddingStart="10dp"
+                    app:paddingEnd="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#22FFFFFF"
+                    >
+                    <TextView
+                        android:text="Name"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/text_event_details_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/super_logo"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/super_gold"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/cap_shield"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/cap_shield"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+                    <android.support.v7.widget.CardView
+
+                        app:paddingStart="10dp"
+                        app:paddingEnd="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:paddingTop="2dp"
+                        app:cardBackgroundColor="#22FFFFFF"
+                        android:paddingBottom="2dp"
+                        app:cardElevation="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1st Prize"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/text_event_details_firstprize"
+                            android:layout_gravity="center"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+                    <android.support.v7.widget.CardView
+
+                        app:paddingStart="10dp"
+                        app:paddingEnd="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:paddingTop="2dp"
+                        app:cardBackgroundColor="#22FFFFFF"
+                        android:paddingBottom="2dp"
+                        app:cardElevation="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2nd Prize"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="center"
+                            android:id="@+id/text_event_details_secondprize"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+
+
+                    app:paddingStart="@dimen/abc_action_bar_default_padding_start_material"
+                    app:paddingEnd="@dimen/abc_action_bar_default_padding_end_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="#22FFFFFF"
+                    app:cardElevation="2dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:text="Contact"
+                        android:id="@+id/text_event_details_contact"
+                        android:layout_marginBottom="5dp"/>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wanna know more...Contact our guy"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:id="@+id/contact_text"
+
+                />
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/contact_guy"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/callbutton_eventdetails" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Us"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:id="@+id/call_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

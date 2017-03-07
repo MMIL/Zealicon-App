@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/reachpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REACH OUT TO US!"
+        android:textSize="30sp"
+        android:textColor="#043b54"
+        android:paddingBottom="5dp"
+        android:id="@+id/textView_contactus"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU CAN'T AFFORD TO MISS IT!"
+        android:textSize="20sp"
+        android:textColor="#e14e49"
+        android:id="@+id/textView_cant_afford"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DR Z. K. ANSARI"
+        android:textSize="20sp"
+        android:textColor="#043b54"
+        android:id="@+id/textView_zkansari"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="CHAIRMAN-ZEALICON 2K16"
+        android:textColor="#e14e49"
+        android:id="@+id/textView_chairman"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="120-2400104"
+        android:textSize="18sp"
+        android:textColor="#043b54"
+        android:id="@+id/textView_chairman_phone"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANANT GARG"
+                    android:textColor="#043b54"
+                    android:textSize="18sp"
+                    android:id="@+id/textView_anantgarg"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="FESTIVAL SECRETARY"
+                    android:textColor="#e14e49"
+                    android:id="@+id/textView_festivalsecretary"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120-2400104"
+                    android:textColor="#043b54"
+                    android:textSize="14sp"
+                    android:id="@+id/textView_festivalsecretary_phone"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIKHIL VERMA"
+                    android:textColor="#043b54"
+                    android:textSize="18sp"
+                    android:id="@+id/textView_nikhilverma"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="TECHNICAL COORDINATOR"
+                    android:textColor="#e14e49"
+                    android:id="@+id/textView_technical_coordinator"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120-2400104"
+                    android:textColor="#043b54"
+                    android:textSize="14sp"
+                    android:id="@+id/textView_technical_coordinator_phone"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weblinks"
+                android:text="WEB LINKS"
+                android:textColor="#043b54"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="50">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:id="@+id/button_so"
+                    android:src="@drawable/smalllogo"
+                    android:layout_gravity="center_horizontal"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#e14e49"
+                        android:text="www.zealicon.in"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        android:id="@+id/button_su"
+                        android:src="@drawable/mmillogo"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#e14e49"
+                        android:text="www.jssmmil.in"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:textSize="20sp"
+               android:id="@+id/findus"
+               android:textColor="#043b54"
+               android:text="OR FIND US AT"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/findusjss"
+                android:src="@drawable/sun_day"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000000"
+                android:text="Tap here"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menandwomen"
+            android:adjustViewBounds="true"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+    <!-- From: file:/C:/Users/Rishabh%20Chauhan/AndroidStudioProjects/Zealicon/app/src/main/res/layout/activity_main.xml -->
