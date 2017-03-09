@@ -41,13 +41,13 @@ public class Robotiles extends Fragment {
         mRecyclerView = (RecyclerView) v.findViewById(R.id.my_recycler_view_events);
 
         ImageView im=(ImageView)v.findViewById(R.id.image_events_superhero);
-        im.setImageResource(R.drawable.batman);
+        im.setImageResource(R.drawable.robotiles1);
         LinearLayout l=(LinearLayout)v.findViewById(R.id.eventspage);
         TextView tv=(TextView)v.findViewById(R.id.categories_events);
         tv.setText("ROBOTILES");
         Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
         tv.setTypeface(custom_font);
-        l.setBackgroundResource(R.drawable.robotiles);
+        l.setBackgroundResource(R.drawable.background);
         pd = new ProgressDialog(getContext(),ProgressDialog.STYLE_SPINNER);
         pd.setMessage("ruko yar aa rha ha na");
         // use this setting to improve performance if you know that changes

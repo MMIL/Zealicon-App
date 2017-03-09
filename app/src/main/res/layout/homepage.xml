@@ -79,7 +79,8 @@
         android:textAlignment="center"
         android:textSize="28sp"
         android:gravity="center_horizontal"
-        android:id="@+id/register" />
+        android:id="@+id/register"
+        android:visibility="gone"/>
 
 
 </RelativeLayout>

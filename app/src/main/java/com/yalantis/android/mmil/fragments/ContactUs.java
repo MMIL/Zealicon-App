@@ -60,12 +60,6 @@ public class ContactUs extends Fragment {
         TextView tv3=(TextView)v.findViewById(R.id.textView_zkansari);
         TextView tv4=(TextView)v.findViewById(R.id.textView_chairman);
         TextView tv5=(TextView)v.findViewById(R.id.textView_chairman_phone);
-        TextView tv6=(TextView)v.findViewById(R.id.textView_anantgarg);
-        TextView tv7=(TextView)v.findViewById(R.id.textView_festivalsecretary);
-        TextView tv8=(TextView)v.findViewById(R.id.textView_festivalsecretary_phone);
-        TextView tv9=(TextView)v.findViewById(R.id.textView_nikhilverma);
-        TextView tv10=(TextView)v.findViewById(R.id.textView_technical_coordinator);
-        TextView tv11=(TextView)v.findViewById(R.id.textView_technical_coordinator_phone);
         TextView tv12=(TextView)v.findViewById(R.id.weblinks);
         TextView tv13=(TextView)v.findViewById(R.id.findus);
       //  setfontstyle(tv1);
@@ -75,12 +69,6 @@ public class ContactUs extends Fragment {
         setfontstyle(tv3);
         setfontstyle(tv4);
         setfontstyle(tv5);
-        setfontstyle(tv6);
-        setfontstyle(tv7);
-        setfontstyle(tv8);
-        setfontstyle(tv9);
-        setfontstyle(tv10);
-        setfontstyle(tv11);
         setfontstyle(tv12);
         setfontstyle(tv13);
 

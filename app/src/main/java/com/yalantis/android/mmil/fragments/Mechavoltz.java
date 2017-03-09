@@ -40,13 +40,13 @@ public class Mechavoltz extends Fragment {
         View v = inflater.inflate(R.layout.events,container,false);
         mRecyclerView = (RecyclerView) v.findViewById(R.id.my_recycler_view_events);
         ImageView im=(ImageView)v.findViewById(R.id.image_events_superhero);
-        im.setImageResource(R.drawable.ironman);
+        im.setImageResource(R.drawable.mechavoltz1);
         LinearLayout l=(LinearLayout)v.findViewById(R.id.eventspage);
         TextView tv=(TextView)v.findViewById(R.id.categories_events);
         tv.setText("MECHAVOLTZ");
         Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
         tv.setTypeface(custom_font);
-        l.setBackgroundResource(R.drawable.mechavoltz);
+        l.setBackgroundResource(R.drawable.background);
         pd = new ProgressDialog(getContext(),ProgressDialog.STYLE_SPINNER);
         pd.setMessage("ruko yar aa rha ha na");
 

@@ -40,11 +40,11 @@ public class Coloralo extends Fragment {
         View v = inflater.inflate(R.layout.events,container,false);
         mRecyclerView = (RecyclerView) v.findViewById(R.id.my_recycler_view_events);
         ImageView im=(ImageView)v.findViewById(R.id.image_events_superhero);
-        im.setImageResource(R.drawable.superman);
+        im.setImageResource(R.drawable.coloralo1);
         LinearLayout l=(LinearLayout)v.findViewById(R.id.eventspage);
         pd = new ProgressDialog(getContext(),ProgressDialog.STYLE_SPINNER) ;
         pd.setMessage("RUKO AA RHA HAI");
-        l.setBackgroundResource(R.drawable.coloralo);
+        l.setBackgroundResource(R.drawable.background);
         TextView tv=(TextView)v.findViewById(R.id.categories_events);
         tv.setText("COLORALO");
         Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");

@@ -33,12 +33,6 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        try {
-            TimeUnit.SECONDS.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         SharedPreferences sf=getSharedPreferences("firsttime",0);
         int i= sf.getInt("first",0);
         if(i==0) {

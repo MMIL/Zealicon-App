@@ -40,11 +40,11 @@ public class Coderz extends Fragment{
         View v = inflater.inflate(R.layout.events,container,false);
         mRecyclerView = (RecyclerView) v.findViewById(R.id.my_recycler_view_events);
         ImageView im=(ImageView)v.findViewById(R.id.image_events_superhero);
-        im.setImageResource(R.drawable.spiderman);
+        im.setImageResource(R.drawable.coderz1);
         LinearLayout l=(LinearLayout)v.findViewById(R.id.eventspage);
         pd = new ProgressDialog(getActivity(),ProgressDialog.STYLE_SPINNER);
         pd.setMessage("ruko yar aa rha ha na");
-        l.setBackgroundResource(R.drawable.coderzbackground);
+        l.setBackgroundResource(R.drawable.background);
        // CardView cardView=(CardView)v.findViewById(R.id.card_view_recycleitem);
        // cardView.setCardBackgroundColor(getResources().getColor(R.color.coderz));
         // use this setting to improve performance if you know that changes
