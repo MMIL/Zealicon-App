@@ -16,12 +16,13 @@
         android:scrollbars="vertical">
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/reg_bg">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/profile_photo"
+        android:src="@drawable/profile1"
         android:layout_centerHorizontal="true"
         android:id="@+id/profile_pic"/>
     <android.support.design.widget.TextInputLayout
@@ -201,7 +202,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/year"
         android:layout_marginBottom="20dp"
-        android:background="#FFA726"
+        android:background="#36516A"
         />
 </RelativeLayout>
     </ScrollView>

@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/mainpagebackgroundstars"
-    >
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:background="@drawable/home_bg"
+    android:weightSum="1">
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
-    <ImageView
-        android:src="@drawable/widelogo"
-        android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:paddingBottom="10dp"
-        android:layout_gravity="center_horizontal" />
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/zealid_linear"
-        android:layout_gravity="center_horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_zealid"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            />
-    </LinearLayout>
-
-<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -56,60 +32,54 @@
         android:padding="5dp"
         card_view:cardElevation="2dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ZEALICON is the annual techno-cultural fest of JSS Academy of Technical Education, Noida. ZEALICON&apos;16 is lined up with a plethora of much exhuberant cultural as well as technical events.
-Creating an aura of avidity and togetherness, We hope that Zealicon 2016 will turn out to be a memorable experience for you !"
-        android:id="@+id/text_about"
-android:fontFamily="sans-serif-light"
-        android:textSize="12sp"
-        android:padding="5dp"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
 
-        />
-
-
-</android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="100">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="50"
-            android:src="@drawable/register_button"
-            android:id="@+id/imageview_register" />
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/popeye"
-
-
-            />
     </LinearLayout>
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:paddingLeft="25dp"
-        android:id="@+id/tv_extravaganza"
-        android:textAlignment="center"
-        android:text="ITS NOT A FEST,ITS A 3 DAYS EXTRAVAGANZA"/>
+        app:srcCompat="@drawable/home_back"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zealid_linear"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:text="Your Zeal Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_zealid"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:src="@drawable/nightbuild"
-    android:adjustViewBounds="true"/>
 </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+
+    <TextView
+        android:text="Register Now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/register" />
+
+
+</RelativeLayout>

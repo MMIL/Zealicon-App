@@ -23,6 +23,7 @@ import com.yalantis.android.mmil.service.UpdateService;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by my hp on 3/30/2016.
@@ -32,10 +33,17 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-SharedPreferences sf=getSharedPreferences("firsttime",0);
-       int i= sf.getInt("first",0);
-        if(i==0)
-        requestjson();
+        try {
+            TimeUnit.SECONDS.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        SharedPreferences sf=getSharedPreferences("firsttime",0);
+        int i= sf.getInt("first",0);
+        if(i==0) {
+            requestjson();
+        }
         else
         {
             Intent in=new Intent(getApplicationContext(),MainActivity.class);
@@ -49,7 +57,7 @@ SharedPreferences sf=getSharedPreferences("firsttime",0);
 
         final RequestQueue requestQueue = Volley.newRequestQueue(this);
        //Coderz
-       final StringRequest stringRequestcoderz = new StringRequest(Request.Method.GET, url+"coderz",
+       final StringRequest stringRequestcoderz = new StringRequest(Request.Method.GET, url+"2",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -75,7 +83,7 @@ SharedPreferences sf=getSharedPreferences("firsttime",0);
                     }
                 });
 //Playiton
-       final StringRequest stringRequestplayiton = new StringRequest(Request.Method.GET, url+"play%20it%20on",
+       final StringRequest stringRequestplayiton = new StringRequest(Request.Method.GET, url+"1",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -99,7 +107,7 @@ SharedPreferences sf=getSharedPreferences("firsttime",0);
                     }
                 });
 //Mechavoltz
-        final StringRequest stringRequestmechavoltz = new StringRequest(Request.Method.GET, url+"mechavoltz",
+        final StringRequest stringRequestmechavoltz = new StringRequest(Request.Method.GET, url+"3",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -122,7 +130,7 @@ SharedPreferences sf=getSharedPreferences("firsttime",0);
                     }
                 });
 //robotiles
-        final StringRequest stringRequestrobotiles = new StringRequest(Request.Method.GET, url+"robotiles",
+        final StringRequest stringRequestrobotiles = new StringRequest(Request.Method.GET, url+"4",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -145,7 +153,7 @@ SharedPreferences sf=getSharedPreferences("firsttime",0);
                     }
                 });
         //coloralo
-        final StringRequest stringRequestcoloralo = new StringRequest(Request.Method.GET, url+"coloralo",
+        final StringRequest stringRequestcoloralo = new StringRequest(Request.Method.GET, url+"6",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -168,7 +176,7 @@ SharedPreferences sf=getSharedPreferences("firsttime",0);
                     }
                 });
         //Z-Wars
-      final StringRequest stringRequestzwars = new StringRequest(Request.Method.GET, url+"zwars",
+      final StringRequest stringRequestzwars = new StringRequest(Request.Method.GET, url+"5",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

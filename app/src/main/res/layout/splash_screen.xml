@@ -2,39 +2,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    >
-
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="200dp"
-        android:layout_marginTop="100dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/hamaraloader"
-
-
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="20dp"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-light"
-        android:text="Superheroes On Your Way!"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="8dp"
-        android:textSize="10sp"
-        android:fontFamily="sans-serif-light"
-        android:text="Internet required only for the first time"/>
-    <ProgressBar
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:visibility="visible"
-        style="@android:style/Widget.ProgressBar"
-        android:layout_gravity="center_horizontal" />
-
+    android:background="@drawable/nav_bg">
 </LinearLayout>
