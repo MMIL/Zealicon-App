@@ -40,6 +40,7 @@
             android:layout_height="175dp"
             android:src="@drawable/coderz"
             android:adjustViewBounds="true"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="center_horizontal"
 
             android:id="@+id/image_events_superhero" />

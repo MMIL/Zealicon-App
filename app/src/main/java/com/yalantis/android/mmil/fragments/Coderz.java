@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -60,6 +61,8 @@ TextView tv=(TextView)v.findViewById(R.id.categories_events);
         SharedPreferences sf=getActivity().getSharedPreferences("events",0);
 
         loaddata(sf.getString("coderz","none"));
+
+
         return v;
     }
 
@@ -85,6 +88,7 @@ TextView tv=(TextView)v.findViewById(R.id.categories_events);
 
         }
     }
+
 
     @Override
     public void onPause() {
