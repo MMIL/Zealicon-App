@@ -27,7 +27,7 @@ public class ZealiconMain extends Fragment {
 
         View v = inflater.inflate(R.layout.homepage,container,false);
        //TextView tv=(TextView)v.findViewById(R.id.text_about);
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "playsir.otf");
+//        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "playsir.otf");
        //tv.setTypeface(custom_font);
 v.findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
     @Override
@@ -37,7 +37,7 @@ v.findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
     }
 });
        // TextView tv_extravaganza=(TextView)v.findViewById(R.id.tv_extravaganza);
-        Typeface custom_font_extravaganza = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
+        Typeface custom_font_extravaganza = Typeface.createFromAsset(getActivity().getAssets(), "got.ttf");
        // tv_extravaganza.setTypeface(custom_font_extravaganza);
         LinearLayout ll=(LinearLayout)v.findViewById(R.id.zealid_linear);
         String s=getActivity().getSharedPreferences("zealiconid",0).getString("zealid","hp");
