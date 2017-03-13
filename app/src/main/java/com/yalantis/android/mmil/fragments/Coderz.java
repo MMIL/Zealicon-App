@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -59,6 +60,8 @@ public class Coderz extends Fragment{
         mRecyclerView.setLayoutManager(mLayoutManager);
         SharedPreferences sf=getActivity().getSharedPreferences("events",0);
         loaddata(sf.getString("coderz","none"));
+
+
         return v;
     }
 
@@ -84,6 +87,7 @@ public class Coderz extends Fragment{
 
         }
     }
+
 
     @Override
     public void onPause() {
