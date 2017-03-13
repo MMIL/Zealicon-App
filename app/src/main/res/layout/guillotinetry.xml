@@ -37,7 +37,8 @@
 
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
-                    android:text="@string/home" />
+                    android:text="@string/home"
+                    android:textStyle="normal|bold" />
             </LinearLayout>
 
 
@@ -54,7 +55,8 @@
 
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
-                    android:text="@string/events"/>
+                    android:text="@string/events"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
 
@@ -73,7 +75,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/coderz"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
 
@@ -92,7 +95,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/play_it_on"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
             <LinearLayout
@@ -110,7 +114,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/mechavoltz"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
 
@@ -129,7 +134,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/robotiles"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
 
@@ -148,7 +154,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/coloralo"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
 
@@ -167,7 +174,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/z_wars"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    android:textStyle="normal|bold" />
 
             </LinearLayout>
 
@@ -184,7 +192,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem.Selected"
                     android:text="Contact Us"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF"
+                    android:textStyle="normal|bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -200,7 +209,8 @@
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem.Selected"
                     android:text="Team"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF"
+                    android:textStyle="normal|bold" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/sponsors"
@@ -215,7 +225,8 @@
 
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
-                    android:text="Sponsors" />
+                    android:text="Sponsors"
+                    android:textStyle="normal|bold" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/settings_group"
@@ -230,7 +241,8 @@
 
                 <com.yalantis.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
-                    android:text="Exit" />
+                    android:text="Exit"
+                    android:textStyle="normal|bold" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -60,14 +60,15 @@
                     app:cardBackgroundColor="#22FFFFFF"
                     >
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:text="Name"
                         android:textColor="#FFFFFF"
-                        android:textSize="30sp"
+                        android:textSize="28sp"
                         android:textStyle="bold"
                         android:layout_gravity="center_horizontal"
-                        android:id="@+id/text_event_details_name"/>
+                        android:id="@+id/text_event_details_name"
+                        android:gravity="center_vertical|center_horizontal" />
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
@@ -89,7 +90,7 @@
                     android:id="@+id/toggle_text"
                     android:textStyle="bold"
 
-                    />
+                    android:gravity="center_horizontal" />
 
 
                 <android.support.v7.widget.SwitchCompat
@@ -127,7 +128,8 @@
                         android:layout_gravity="center_horizontal"
                         android:id="@+id/text_event_details_description"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" />
                 </android.support.v7.widget.CardView>
             </LinearLayout>
             <LinearLayout
@@ -224,8 +226,8 @@
                     app:cardElevation="2dp"
                     android:layout_marginBottom="5dp">
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textSize="20sp"
@@ -233,7 +235,9 @@
                         android:textColor="#FFFFFF"
                         android:text="Contact"
                         android:id="@+id/text_event_details_contact"
-                        android:layout_marginBottom="5dp"/>
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="5dp" />
 
 
                 </android.support.v7.widget.CardView>

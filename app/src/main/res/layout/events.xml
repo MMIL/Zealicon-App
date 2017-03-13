@@ -15,29 +15,29 @@
         android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Category"
-        android:textSize="36sp"
+        android:textSize="38sp"
         android:id="@+id/categories_events"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="10dp"/>
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal|bold" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view_events"
         android:scrollbars="vertical"
 
         android:layout_width="match_parent"
-        android:layout_height="358dp"
 
 
-
-
-        />
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp" />
 
         <ImageView
-            android:layout_width="604dp"
-            android:layout_height="175dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:src="@drawable/coderz"
             android:adjustViewBounds="true"
             android:layout_gravity="center_horizontal"

@@ -44,7 +44,7 @@ public class Mechavoltz extends Fragment {
         LinearLayout l=(LinearLayout)v.findViewById(R.id.eventspage);
         TextView tv=(TextView)v.findViewById(R.id.categories_events);
         tv.setText("MECHAVOLTZ");
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "abaddon.ttf");
         tv.setTypeface(custom_font);
         l.setBackgroundResource(R.drawable.background);
         pd = new ProgressDialog(getContext(),ProgressDialog.STYLE_SPINNER);

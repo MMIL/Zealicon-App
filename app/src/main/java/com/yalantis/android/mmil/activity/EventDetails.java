@@ -208,7 +208,8 @@ eventname=jo.getString("event_name");
          TextView v7=(TextView)findViewById(R.id.contact_text);
          TextView v8=(TextView)findViewById(R.id.call_text);
 
-         settextstyle(v1);
+         Typeface custom_font = Typeface.createFromAsset(getApplicationContext().getAssets(), "got.ttf");
+         v1.setTypeface(custom_font);
          settextstyle(v2);
          settextstyle(v3);
          settextstyle(v4);
@@ -218,7 +219,7 @@ eventname=jo.getString("event_name");
          settextstyle(v8);
      }
     private void settextstyle(TextView tv1) {
-        Typeface custom_font = Typeface.createFromAsset(getApplicationContext().getAssets(), "huggable.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getApplicationContext().getAssets(), "meph.ttf");
         tv1.setTypeface(custom_font);
     }
 

@@ -62,20 +62,26 @@ public class ContactUs extends Fragment {
         TextView tv5=(TextView)v.findViewById(R.id.textView_chairman_phone);
         TextView tv12=(TextView)v.findViewById(R.id.weblinks);
         TextView tv13=(TextView)v.findViewById(R.id.findus);
+        TextView tv14=(TextView)v.findViewById(R.id.textView_prashant);
+        TextView tv15=(TextView)v.findViewById(R.id.textView_convenor);
       //  setfontstyle(tv1);
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "abaddon.ttf");
         tv1.setTypeface(custom_font);
+        tv12.setTypeface(custom_font);
+        tv13.setTypeface(custom_font);
+
         setfontstyle(tv2);
         setfontstyle(tv3);
         setfontstyle(tv4);
         setfontstyle(tv5);
-        setfontstyle(tv12);
-        setfontstyle(tv13);
+        setfontstyle(tv14);
+        setfontstyle(tv15);
+
 
     }
 
     private void setfontstyle(TextView tv1) {
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "akbar.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "got.ttf");
         tv1.setTypeface(custom_font);
     }
 }

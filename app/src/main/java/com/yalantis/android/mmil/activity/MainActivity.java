@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             getSupportActionBar().setTitle(null);
         }
         TextView tv_extravaganza=(TextView)findViewById(R.id.zealicon_title);
-        Typeface custom_font_extravaganza = Typeface.createFromAsset(getApplicationContext().getAssets(), "playsir.otf");
+        Typeface custom_font_extravaganza = Typeface.createFromAsset(getApplicationContext().getAssets(), "got.ttf");
         tv_extravaganza.setTypeface(custom_font_extravaganza);
 
         View guillotineMenu = LayoutInflater.from(this).inflate(R.layout.guillotinetry, null);

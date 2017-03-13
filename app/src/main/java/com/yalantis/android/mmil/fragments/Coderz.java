@@ -50,15 +50,14 @@ public class Coderz extends Fragment{
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         mRecyclerView.setHasFixedSize(true);
-TextView tv=(TextView)v.findViewById(R.id.categories_events);
+        TextView tv=(TextView)v.findViewById(R.id.categories_events);
         tv.setText("CODERZ");
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "abaddon.ttf");
         tv.setTypeface(custom_font);
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
         SharedPreferences sf=getActivity().getSharedPreferences("events",0);
-
         loaddata(sf.getString("coderz","none"));
         return v;
     }

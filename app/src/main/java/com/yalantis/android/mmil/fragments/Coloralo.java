@@ -47,7 +47,7 @@ public class Coloralo extends Fragment {
         l.setBackgroundResource(R.drawable.background);
         TextView tv=(TextView)v.findViewById(R.id.categories_events);
         tv.setText("COLORALO");
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "abaddon.ttf");
         tv.setTypeface(custom_font);
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView

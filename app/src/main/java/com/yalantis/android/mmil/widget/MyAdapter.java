@@ -77,7 +77,7 @@ this.context=context;
     public void onBindViewHolder(ViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        Typeface custom_font = Typeface.createFromAsset(context.getAssets(), "mandingo.ttf");
+        Typeface custom_font = Typeface.createFromAsset(context.getAssets(), "got.ttf");
         holder.mTextView.setTypeface(custom_font);
         holder.mTextView.setText(mDataset.get(position));
 holder.rl.setOnClickListener(new View.OnClickListener() {

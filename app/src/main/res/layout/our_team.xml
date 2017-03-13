@@ -16,81 +16,51 @@
             android:orientation="vertical">
             <!-- Done :) !-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Team"
                 android:id="@+id/tv_team"
-                android:textSize="36sp"
+                android:textSize="38sp"
                 android:layout_gravity="center_horizontal"
-                android:paddingBottom="10dp"/>
-
-            <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:weightSum="100">
-
-    </LinearLayout>
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="99">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="33">
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image_anant"
+                        android:src="@drawable/anant"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/ananttag"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp" />
                     <de.hdodenhof.circleimageview.CircleImageView
                         xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/profile_image"
-                        android:layout_width="96dp"
-                        android:layout_height="96dp"
                         android:src="@drawable/kanishk"
                         app:civ_border_width="2dp"
                         app:civ_border_color="#FF000000"
-                        android:layout_gravity="center_horizontal" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="KAnishk Sharma"
-                        android:fontFamily="sans-serif-light"
-                        android:id="@+id/textView3"
                         android:layout_gravity="center_horizontal"
-                        android:paddingBottom="15dp"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="33">
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/kanishktag"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image"
-                        android:layout_width="96dp"
-                        android:layout_height="96dp"
-                        android:src="@drawable/sumit"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"
-                        android:layout_gravity="center_horizontal" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="Sumit Pundir"
-                        android:fontFamily="sans-serif-light"
-                        android:id="@+id/textView"
-                        android:layout_gravity="center_horizontal"
-                        android:paddingBottom="15dp"
-                        />
-                </LinearLayout></LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

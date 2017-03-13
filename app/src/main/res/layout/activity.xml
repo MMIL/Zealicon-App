@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:text="ZEALICON"
                 android:id="@+id/zealicon_title"
-                android:textSize="@dimen/guillotine_item_text_size" />
+                android:textSize="22sp" />
         </android.support.v7.widget.Toolbar>
 
         <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"

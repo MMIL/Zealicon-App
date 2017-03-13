@@ -21,7 +21,7 @@ public class OurTeam extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.our_team,container,false);
         TextView tv1=(TextView)v.findViewById(R.id.tv_team);
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "huggable.ttf");
+        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "abaddon.ttf");
         tv1.setTypeface(custom_font);
         return v;
     }

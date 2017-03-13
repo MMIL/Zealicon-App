@@ -24,15 +24,15 @@
             android:padding="5dp"
             android:id="@+id/relative_recycleviewer">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:layout_centerInParent="true"
                 android:textColor="#000000"
                 android:fontFamily="sans-serif-light"
                 android:text="New Text"
                 android:id="@+id/text_recyle_list_item"
-                 />
+                android:gravity="center_horizontal" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
