@@ -12,10 +12,12 @@ import com.yalantis.android.mmil.App;
 public class CanaroTextView extends TextView {
     public CanaroTextView(Context context) {
         this(context, null);
+        setTypeface(App.canaroExtraBold);
     }
 
     public CanaroTextView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
+        setTypeface(App.canaroExtraBold);
     }
 
     public CanaroTextView(Context context, AttributeSet attrs, int defStyleAttr) {

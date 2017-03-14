@@ -18,12 +18,21 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_eventdetails"
             android:layout_width="match_parent"
-            app:title="Event Details"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            android:elevation="2dp"/>
+            android:elevation="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Event Details"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -85,6 +94,7 @@
                     android:text="@string/toggle"
                     android:paddingTop="5dp"
                     android:layout_weight="10"
+                    android:visibility="gone"
                     android:textColor="#FFFFFF"
                     android:textSize="16dp"
                     android:id="@+id/toggle_text"
@@ -97,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/switchcompat"
-
+                    android:visibility="gone"
                     android:layout_weight="90"
                     android:layout_gravity="right"
                     />
@@ -244,15 +254,15 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wanna know more...Contact our guy"
-                android:layout_gravity="center_horizontal"
-                android:textStyle="bold"
-                android:id="@+id/contact_text"
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Wanna know more...Contact our guy"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/contact_text"-->
 
-                />
+                <!--/>-->
             <ImageButton
                 android:layout_width="70dp"
                 android:layout_height="70dp"

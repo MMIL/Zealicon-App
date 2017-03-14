@@ -143,9 +143,9 @@ eventname=jo.getString("event_name");
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked&&!dateofevent.equals("hello")) {
-                                        notifyme();
+                                      //  notifyme();
                 } else if(!dateofevent.equals("hello")){
-                    canclenotifyme();
+                  //  canclenotifyme();
                 }
             }
         });
@@ -205,7 +205,7 @@ eventname=jo.getString("event_name");
          TextView v4=(TextView)findViewById(R.id.text_event_details_firstprize);
          TextView v5=(TextView)findViewById(R.id.text_event_details_secondprize);
          TextView v6=(TextView)findViewById(R.id.text_event_details_contact);
-         TextView v7=(TextView)findViewById(R.id.contact_text);
+//         TextView v7=(TextView)findViewById(R.id.contact_text);
          TextView v8=(TextView)findViewById(R.id.call_text);
 
          Typeface custom_font = Typeface.createFromAsset(getApplicationContext().getAssets(), "got.ttf");
@@ -215,7 +215,7 @@ eventname=jo.getString("event_name");
          settextstyle(v4);
          settextstyle(v5);
          settextstyle(v6);
-         settextstyle(v7);
+//         settextstyle(v7);
          settextstyle(v8);
      }
     private void settextstyle(TextView tv1) {
