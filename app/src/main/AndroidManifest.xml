@@ -8,7 +8,7 @@
     <application
         android:name="com.yalantis.android.mmil.connectionutils.ApplicationWrapper"
         android:allowBackup="true"
-        android:icon="@drawable/logomainappicon"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
