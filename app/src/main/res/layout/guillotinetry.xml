@@ -35,7 +35,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/home"
                     android:textStyle="normal|bold" />
@@ -53,7 +53,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/events"
                     android:textStyle="normal|bold" />
@@ -72,7 +72,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="0.07" />
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/coderz"
                     android:textSize="16dp"
@@ -92,7 +92,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="0.07" />
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/play_it_on"
                     android:textSize="16dp"
@@ -111,7 +111,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="0.07" />
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/mechavoltz"
                     android:textSize="16dp"
@@ -131,7 +131,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="0.07" />
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/robotiles"
                     android:textSize="16dp"
@@ -151,7 +151,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="0.07" />
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/coloralo"
                     android:textSize="16dp"
@@ -171,7 +171,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="0.07" />
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="@string/z_wars"
                     android:textSize="16dp"
@@ -189,7 +189,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem.Selected"
                     android:text="Contact Us"
                     android:textColor="#FFFFFF"
@@ -206,7 +206,7 @@
                     android:layout_width="30dp"
                     android:layout_height="20dp"/>
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem.Selected"
                     android:text="Team"
                     android:textColor="#FFFFFF"
@@ -223,7 +223,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="Sponsors"
                     android:textStyle="normal|bold" />
@@ -239,7 +239,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
-                <com.yalantis.android.mmil.widget.CanaroTextView
+                <com.zeal.android.mmil.widget.CanaroTextView
                     style="@style/TextView.GuillotineItem"
                     android:text="Exit"
                     android:textStyle="normal|bold" />
