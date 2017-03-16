@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.yalantis.guillotine.sample"
+        applicationId "com.zeal.android.mmil"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 2
