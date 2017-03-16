@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zeal.android.mmil">
+    package="com.zealicon.android.mmil">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
-        android:name="com.zeal.android.mmil.connectionutils.ApplicationWrapper"
+        android:name="com.zealicon.android.mmil.connectionutils.ApplicationWrapper"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.zeal.android.mmil.activity.MainActivity"
+            android:name="com.zealicon.android.mmil.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.zeal.android.mmil.activity.SplashScreen"
+            android:name="com.zealicon.android.mmil.activity.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -25,40 +25,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.zeal.android.mmil.activity.EventDetails"
-            android:parentActivityName="com.zeal.android.mmil.activity.MainActivity"
+            android:name="com.zealicon.android.mmil.activity.EventDetails"
+            android:parentActivityName="com.zealicon.android.mmil.activity.MainActivity"
             android:screenOrientation="portrait">
 
         </activity>
-        <service android:name="com.zeal.android.mmil.service.NotificationService"/>
-        <receiver android:name="com.zeal.android.mmil.service.NotificationService$AlarmReceiver"
+        <service android:name="com.zealicon.android.mmil.service.NotificationService"/>
+        <receiver android:name="com.zealicon.android.mmil.service.NotificationService$AlarmReceiver"
             android:screenOrientation="portrait" />
 
-        <service android:name="com.zeal.android.mmil.service.UpdateService"/>
-        <receiver android:name="com.zeal.android.mmil.service.UpdateService$AlarmReceiverUpdate"
+        <service android:name="com.zealicon.android.mmil.service.UpdateService"/>
+        <receiver android:name="com.zealicon.android.mmil.service.UpdateService$AlarmReceiverUpdate"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.zeal.android.mmil.activity.Register"
+            android:name="com.zealicon.android.mmil.activity.Register"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.zeal.android.mmil.activity.RegisterTry"
+            android:name="com.zealicon.android.mmil.activity.RegisterTry"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.zeal.android.mmil.activity.Retry"
+            android:name="com.zealicon.android.mmil.activity.Retry"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.zeal.android.mmil.activity.Sponsors"
-            android:parentActivityName="com.zeal.android.mmil.activity.MainActivity"
+            android:name="com.zealicon.android.mmil.activity.Sponsors"
+            android:parentActivityName="com.zealicon.android.mmil.activity.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.zeal.android.mmil.activity.ZealId"
+            android:name="com.zealicon.android.mmil.activity.ZealId"
 
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"/>
