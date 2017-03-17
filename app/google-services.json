@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "817859667998",
+    "firebase_url": "https://geniusclub-d42ea.firebaseio.com",
+    "project_id": "geniusclub-d42ea",
+    "storage_bucket": "geniusclub-d42ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817859667998:android:55aec58846d93505",
+        "android_client_info": {
+          "package_name": "com.android.adityabro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817859667998-unji2vcqr8ir6ihu3sbt2bma3thi7p9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_d_zooRTkLyVhj5f7DvdmszmkLMeRlXk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817859667998:android:a6eebd84a84a8520",
+        "android_client_info": {
+          "package_name": "com.zealicon.android.mmil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817859667998-unji2vcqr8ir6ihu3sbt2bma3thi7p9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_d_zooRTkLyVhj5f7DvdmszmkLMeRlXk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

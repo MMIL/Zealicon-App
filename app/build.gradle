@@ -29,4 +29,10 @@ dependencies {
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
     compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'net.grandcentrix.tray:tray:0.11.1'
 }
+
+apply plugin: 'com.google.gms.google-services'

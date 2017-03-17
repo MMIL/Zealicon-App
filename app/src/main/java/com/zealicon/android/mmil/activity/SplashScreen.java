@@ -17,8 +17,11 @@ import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.zealicon.android.mmil.R;
 import com.zealicon.android.mmil.service.UpdateService;
+
+import net.grandcentrix.tray.AppPreferences;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -32,8 +35,11 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        SharedPreferences sf=getSharedPreferences("firsttime",0);
-        int i= sf.getInt("first",0);
+//        SharedPreferences sf=getSharedPreferences("firsttime",0);
+//        int i= sf.getInt("first",0);
+        FirebaseMessaging.getInstance().subscribeToTopic("all");
+        AppPreferences appPreferences = new AppPreferences(getApplicationContext());
+        int i=appPreferences.getInt("firsttime",0);
         if(i==0) {
             requestjson();
         }
@@ -58,8 +64,10 @@ public class SplashScreen extends AppCompatActivity {
                         Log.v("MyApp", response);
                         SharedPreferences s=getSharedPreferences("events",0);
                         s.edit().putString("coderz",response).apply();
-                        SharedPreferences sf=getSharedPreferences("firsttime",0);
-                        sf.edit().putInt("first", 1).apply();
+//                        SharedPreferences sf=getSharedPreferences("firsttime",0);
+//                        sf.edit().putInt("first", 1).apply();
+                        AppPreferences appPreferences = new AppPreferences(getApplicationContext());
+                        appPreferences.put("firsttime",1);
                         Intent in =new Intent(getApplicationContext(),MainActivity.class);
                         startActivity(in);
 
