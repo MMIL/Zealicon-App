@@ -5,67 +5,71 @@
     android:layout_height="match_parent"
     android:background="@drawable/home_background"
    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
-
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    style="@android:style/Theme.Translucent">
-
-
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_homepage_aboutzealicon"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        card_view:cardBackgroundColor="#33FFFFFF"
-        card_view:cardCornerRadius="4dp"
-        card_view:paddingEnd="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:padding="5dp"
-        card_view:cardElevation="2dp">
+        android:orientation="vertical">
 
 
-    </android.support.v7.widget.CardView>
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
-
-    </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/home_back"
-        android:id="@+id/imageView5"
-        android:layout_marginTop="30dp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/zealid_linear"
-        android:layout_gravity="center_horizontal">
-        <TextView
-            android:text="Your Zeal Id"
+        <LinearLayout
+            style="@android:style/Theme.Translucent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/main_zealid"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="normal|bold"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="20dp" />
-    </LinearLayout>
+            android:orientation="vertical">
 
-</LinearLayout>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_homepage_aboutzealicon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                card_view:cardBackgroundColor="#33FFFFFF"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="2dp"
+                card_view:paddingEnd="10dp">
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/home_back" />
+
+        <LinearLayout
+            android:id="@+id/zealid_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/main_zealid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Your Zeal Id"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
         android:text="Register Now"
@@ -81,6 +85,19 @@
         android:gravity="center_horizontal"
         android:id="@+id/register"
         android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toEndOf="@+id/register"
+        android:layout_toRightOf="@+id/register"
+        android:gravity="center_horizontal|center"
+        android:text="REGISTRATIONS COMING SOON"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

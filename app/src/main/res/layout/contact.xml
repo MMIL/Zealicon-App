@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:text="CHAIRMAN-ZEALICON 2K16"
+        android:text="CHAIRMAN-ZEALICON 2K17"
         android:textColor="#ffffff"
         android:id="@+id/textView_chairman"
         android:layout_gravity="center_horizontal"

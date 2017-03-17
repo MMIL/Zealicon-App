@@ -36,9 +36,9 @@ v.findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
-       // TextView tv_extravaganza=(TextView)v.findViewById(R.id.tv_extravaganza);
+       TextView tv_reg=(TextView)v.findViewById(R.id.registration);
         Typeface custom_font_extravaganza = Typeface.createFromAsset(getActivity().getAssets(), "got.ttf");
-       // tv_extravaganza.setTypeface(custom_font_extravaganza);
+        tv_reg.setTypeface(custom_font_extravaganza);
         LinearLayout ll=(LinearLayout)v.findViewById(R.id.zealid_linear);
         String s=getActivity().getSharedPreferences("zealiconid",0).getString("zealid","hp");
         if(s.equals("hp")){
