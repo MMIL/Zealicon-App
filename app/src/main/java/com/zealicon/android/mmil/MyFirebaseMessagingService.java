@@ -29,44 +29,55 @@ extends FirebaseMessagingService{
     public void onMessageReceived(RemoteMessage remoteMessage) {
         // TODO(developer): Handle FCM messages here.
 //        Log.v("NotificationReceived",remoteMessage.getNotification().getBody());
-        Log.v("NotificationReceived",remoteMessage.getData().toString());
+//        Log.v("NotificationReceived",remoteMessage.getData().toString());
      //   Toast.makeText(MyFirebaseMessagingService.this, "hakhgfgh", Toast.LENGTH_SHORT).show();
 //        // If the application is in the foreground handle both data and notification messages here.
 //        // Also if you intend on generating your own notifications as a result of a received FCM
 //        // message, here is where that should be initiated. See sendNotification method below.
 //
-        Log.v(TAG, "From: " + remoteMessage.getFrom());
-        Log.v(TAG, "Notification Message Body: " + remoteMessage.getNotification().getBody());
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 , intent,
-                PendingIntent.FLAG_ONE_SHOT);
+//        Log.v(TAG, "From: " + remoteMessage.getFrom());
+        Map<String,String> values=remoteMessage.getData();
 
-        Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(android.R.drawable.sym_def_app_icon)
-                .setContentTitle("FCM Message")
-                .setContentText( remoteMessage.getNotification().getBody())
-                .setAutoCancel(true)
-                .setSound(defaultSoundUri)
-                .setContentIntent(pendingIntent);
 
-        NotificationManager notificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        String notification=values.get("notification");
+
+        if(notification.contentEquals("no"))
+        {
+            AppPreferences appPreferences = new AppPreferences(getApplicationContext()); // this Preference comes for free from the library
+// save a key value pair
+
+            appPreferences.put("firsttime", 0);
+        }
+        else {
+//        Log.v(TAG, "Notification Message Body: " + remoteMessage.getNotification().getBody());
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent,
+                    PendingIntent.FLAG_ONE_SHOT);
+
+            Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+                    .setSmallIcon(R.drawable.logo)
+                    .setContentTitle("Zealicon")
+                    .setContentText(values.get("text"))
+                    .setAutoCancel(true)
+                    .setSound(defaultSoundUri)
+                    .setContentIntent(pendingIntent);
+
+            NotificationManager notificationManager =
+                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 //
 ////        SharedPreferences sharedPreferences=getApplicationContext().getSharedPreferences("aditya",0);
 ////
 ////        sharedPreferences.edit().putString("image",remoteMessage.getNotification().getBody()).commit();
 //
-        AppPreferences appPreferences = new AppPreferences(getApplicationContext()); // this Preference comes for free from the library
-// save a key value pair
-        Map<String,String> values=remoteMessage.getData();
-        appPreferences.put("firsttime",0);
+
 //
 //// read the value for your key. the second parameter is a fallback (optional otherwise throws)
 //
 //
-        notificationManager.notify(0 , notificationBuilder.build());
+            notificationManager.notify(0, notificationBuilder.build());
+        }
     }
 
 

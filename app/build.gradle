@@ -5,11 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-<<<<<<< HEAD
         applicationId "com.zealicon.android.mmil"
-=======
-        applicationId "com.zeal.android.mmil"
->>>>>>> d15054045da0975e12a59f558e334234e447db85
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 2
