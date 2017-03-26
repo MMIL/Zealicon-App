@@ -26,6 +26,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.ConnectException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -143,65 +144,81 @@ public class Register extends AppCompatActivity {
         protected String doInBackground(Void... params) {
             try
             {
-                StringBuilder postData=new StringBuilder();
-                postData.append(URL1.getRegisterURL()+"?");
+//                StringBuilder postData=new StringBuilder();
+//                postData.append(URL1.getRegisterURL()+"?");
                 //Iterator<String> paramiterator=param.keySet().iterator();
 
-                postData.append(URLEncoder.encode("name", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(name, "UTF-8"));
+//                postData.append(URLEncoder.encode("name", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(name, "UTF-8"));
+//
+//                if (postData.length() != 0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("email", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(email, "UTF-8"));
+//
+//                if(postData.length()!=0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("college", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(college,"UTF-8"));
+//
+//
+//                if(postData.length()!=0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("contact", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(contact,"UTF-8"));
+//
+//
+//                if(postData.length()!=0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("course", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(course,"UTF-8"));
+//
+//                if(postData.length()!=0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("branch", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(branch,"UTF-8"));
+//
+//                if(postData.length()!=0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("year", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode(year,"UTF-8"));
+//
+//                if(postData.length()!=0)
+//                    postData.append('&');
+//                postData.append(URLEncoder.encode("app", "UTF-8"));
+//                postData.append('=');
+//                postData.append(URLEncoder.encode("1","UTF-8"));
 
-                if (postData.length() != 0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("email", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(email, "UTF-8"));
 
-                if(postData.length()!=0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("college", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(college,"UTF-8"));
+                JSONObject params1=new JSONObject();
+                params1.put("name",name);
+                params1.put("email",email);
+                params1.put("college",college);
+                params1.put("course",course);
+                params1.put("branch",branch);
+                params1.put("year",year);
+                params1.put("contact",contact);
+                params1.put("API_KEY","Zeal_ONL_2k17032459apikeyhellobye");
 
-
-                if(postData.length()!=0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("contact", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(contact,"UTF-8"));
-
-
-                if(postData.length()!=0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("course", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(course,"UTF-8"));
-
-                if(postData.length()!=0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("branch", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(branch,"UTF-8"));
-
-                if(postData.length()!=0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("year", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode(year,"UTF-8"));
-
-                if(postData.length()!=0)
-                    postData.append('&');
-                postData.append(URLEncoder.encode("app", "UTF-8"));
-                postData.append('=');
-                postData.append(URLEncoder.encode("1","UTF-8"));
-
-
-                //Log.v(TAG,param.toString());
-                URL url=new URL(postData.toString());
-                Log.v(TAG, "get url " + postData.toString());
+                Log.v(TAG,params1.toString());
+                URL url=new URL(URL1.getRegisterURL());
+                Log.v(TAG, "get url " + URL1.getRegisterURL());
                 //byte[] postDataBytes=postData.toString().getBytes("UTF-8");
                 conn=(HttpURLConnection)url.openConnection();
-                conn.setRequestMethod("GET");
+                conn.setRequestProperty("Content-Type","x-www-form-urlencoded");
+                conn.setRequestMethod("POST");
+
+
+                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+            wr.write(params1.toString());
+            wr.flush();
 
                 InputStream inputStream = conn.getInputStream();
 
@@ -231,6 +248,8 @@ public class Register extends AppCompatActivity {
                 e.printStackTrace();
             } catch (IOException e) {
                 error= "null_file";
+                e.printStackTrace();
+            } catch (JSONException e) {
                 e.printStackTrace();
             } finally {
                 if ( conn!= null) {

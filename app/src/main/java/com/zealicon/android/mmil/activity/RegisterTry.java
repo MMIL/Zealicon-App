@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -21,6 +22,9 @@ import com.zealicon.android.mmil.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by my hp on 4/5/2016.
@@ -120,11 +124,11 @@ branch=brancharray[position];
 
     void registertask()
     {
-        String url = "http://zealicon.in/reg_app?name="+name+"&email="+email+"&college="+college+"&course="+course+"&branch="+branch+"&year="+year+"&contact="+contact+"&app=1";
+        String url = "http://zealicon.in/reg_app?";
 
 
         //Creating a string request
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -149,7 +153,7 @@ branch=brancharray[position];
                         //You can handle error here if you want
 Log.v("Failure",error.toString());
                     }
-                });/* {
+                } ){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -166,7 +170,7 @@ Log.v("Failure",error.toString());
                 //returning parameter
                 return params;
             }
-        };*/
+        };
 
         //Adding the string request to the queue
         RequestQueue requestQueue = Volley.newRequestQueue(this);

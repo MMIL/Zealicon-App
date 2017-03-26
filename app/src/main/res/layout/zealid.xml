@@ -33,15 +33,15 @@ android:textSize="24sp"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Note: You need this registration id and pay \nregistration amount at the registration desk"
+ android:textAlignment="center"
+        android:text="Note: You need this registration id and pay \nregistration amount at the registration desk \nNon-JSS Students need to bring their College-Ids and passport size photographs."
         android:id="@+id/textView5"
         android:textSize="12sp"
         android:layout_marginTop="56dp"
         android:layout_below="@+id/tv_zealid"
-        android:layout_centerHorizontal="true" />
+        />
 
     <TextView
         android:layout_width="wrap_content"

@@ -24,7 +24,7 @@ public class ZealId extends Activity {
         TextView tv5=(TextView)findViewById(R.id.textView5);
         TextView tvzealid=(TextView)findViewById(R.id.tv_zealid);
 
-        Typeface custom_font_extravaganza = Typeface.createFromAsset(getApplicationContext().getAssets(), "huggable.ttf");
+        Typeface custom_font_extravaganza = Typeface.createFromAsset(getApplicationContext().getAssets(), "got.ttf");
         tv1.setTypeface(custom_font_extravaganza);
         tv2.setTypeface(custom_font_extravaganza);
         tv4.setTypeface(custom_font_extravaganza);
